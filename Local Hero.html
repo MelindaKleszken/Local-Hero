@@ -1,28 +1,57 @@
 <!DOCTYPE html
 <html>
-    <style>
-        .main-container{
-            background:red;
-        }
-        .title, .icon-image{
-            background-color: blue;
-            text-align:center;
-        }
-    </style>
-    <head>
-        <title>Local Hero</title>
-    </head>
+<head> 
+    <title>Local Hero</title>
 
-    <body>
-        <div class="main-container">
-            <!-- <div class="title"><h1>Local Hero</h1></div> -->
-            <div class="icon-image"><a href="https://melindamarian.com/" target="_blank">
-                <img alt="Local Hero" src="https://raw.githubusercontent.com/MelindaKleszken/Local-Hero/master/local%20hero.jpg"></div>
-            <p>
-                
-            </p>
-            <p></p>
-        </div>
+<style>
+    .html{
+        background-color:grey;
+    }
+    .main-container{
+        background:grey;
+        text-align:center;
+    }
+    .title, .icon-image{
+        /*background-color: blue;*/
+        text-align:center;
+    }
+    .button1 {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #4CAF50;
+    }
 
-    </body>
+    .button1:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .button2 {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #008CBA;
+    }
+
+    .button2:hover {
+        background-color: #008CBA;
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- <div class="title"><h1>Local Hero</h1></div> -->
+        <div class="icon-image"><a href="https://melindamarian.com/" target="_blank">
+            <img alt="Local Hero" src="local hero.jpg"></a></div>
+        <h2>This page can be used to report problems in your community.</h2>
+        <p>Select the 'Survey' button to submit a problem or the 'Dashboard' button to see the inputs.</p>
+
+        <a href="https://arcg.is/0eq4000" target="_blank"><button class="button button1">Survey</button></a>
+        <a href="https://arcg.is/0SrDjy" target="_blank"><button class="button button2">Dashboard</button></a>  
+
+        <p></p>
+    </div>
+
+</body>
 </html>
