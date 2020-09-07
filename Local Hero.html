@@ -1,25 +1,29 @@
-<!DOCTYPE html
+<!DOCTYPE html>
 <html>
 <head> 
-    <title>Local Hero</title>
-
+<title>Local Hero</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+    * {
+    box-sizing: border-box;
+    }
     .html{
-        box-sizing: border-box ;
+        margin: 0;
+        
     }
     .main-container{
-        font-family: "Arial","Verdana", sans-serif;
+        flex: 100%;
         background:grey;
-        text-align:center;
-        top:20%;
-        width: 99%;
-        height: 97%;
+        font-family: "Arial","Verdana", sans-serif;
+        height: 100%;
     }
     .elements{
-        padding: 40px 40px; 
+        padding: 40px 0 0 0;
+        text-align:center; 
     }
     h2 {
-        font-size: 40px;
+        font-size: 35px;
         color: black;
     }
     p {
@@ -30,21 +34,15 @@
     /* Buttons -------------------------*/
     .button{
         text-align:center;
-        font-size: 25px;
         transition-duration: 0.4s;
         float: center;
         padding: 10px;  
-    }
-    @media screen and (max-width: 600px){
-    .button{
-        width: 100%;}
     }
     .button1 {
         background-color: #4CAF50; 
         color: black; 
         border: 1% solid darkslategrey;
         position: relative;
-        right:10px;
     }
     .button1:hover {
         background-color: #4CAF50;
@@ -56,7 +54,6 @@
         color: black; 
         border: 1% solid darkslategrey;
         position: relative;
-        left:10px;
     }
     .button2:hover {
         background-color: #008CBA;
@@ -64,7 +61,35 @@
         font-weight: bold;
     }
     .copyright{
-        padding-top: 50px;
+        padding-top: 90px;
+        padding-bottom: 20px;
+    }
+
+    /* Media ------------- */
+    @media screen and (max-width: 600px){
+    .button{
+        width: 100%;
+        font-size:30px;
+        align-items: center;}
+    .button1,.button2{
+        flex-direction: column;
+    }
+    .button1{
+        bottom:10px;}
+    .copyright{
+        padding-top: 10px;}
+    h2 {
+        font-size: 35px;}
+    }
+    @media screen and (min-width: 601px) {
+    h2 {
+        font-size: 45px;}
+    .button{
+        font-size:37px;}
+    .button1{
+        right:40px;}
+    .button2{
+        left:80px;}
     }
 </style>
 </head>
@@ -72,7 +97,6 @@
 <body>
     <div class="main-container">
         <div class="elements">
-            <!-- <div class="title"><h1>Local Hero</h1></div> -->
             <div class="icon-image"><a href="https://melindamarian.com/" target="_blank">
                 <img alt="Local Hero" src="local hero.jpg"></a> 
             </div>
