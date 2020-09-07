@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Local Hero</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+    box-sizing: border-box;
+    }
+    .html{
+        margin: 0;
+        
+    }
+    .main-container{
+        flex: 100%;
+        background:grey;
+        font-family: "Arial","Verdana", sans-serif;
+        height: 100%;
+    }
+    .elements{
+        padding: 40px 0 0 0;
+        text-align:center; 
+    }
+    h2 {
+        font-size: 35px;
+        color: black;
+    }
+    p {
+        font-size: 25px;
+        color: black;
+    }
+
+    /* Buttons -------------------------*/
+    .button{
+        text-align:center;
+        transition-duration: 0.4s;
+        float: center;
+        padding: 10px;  
+    }
+    .button1 {
+        background-color: #4CAF50; 
+        color: black; 
+        border: 1% solid darkslategrey;
+        position: relative;
+    }
+    .button1:hover {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+    }
+    .button2 {
+        background-color: #008CBA ; 
+        color: black; 
+        border: 1% solid darkslategrey;
+        position: relative;
+    }
+    .button2:hover {
+        background-color: #008CBA;
+        color: white;
+        font-weight: bold;
+    }
+    .copyright{
+        padding-top: 90px;
+        padding-bottom: 20px;
+    }
+
+    /* Media ------------- */
+    @media screen and (max-width: 600px){
+    .button{
+        width: 100%;
+        font-size:30px;
+        align-items: center;}
+    .button1,.button2{
+        flex-direction: column;
+    }
+    .button1{
+        bottom:10px;}
+    .copyright{
+        padding-top: 10px;}
+    h2 {
+        font-size: 35px;}
+    }
+    @media screen and (min-width: 601px) {
+    h2 {
+        font-size: 45px;}
+    .button{
+        font-size:37px;}
+    .button1{
+        right:40px;}
+    .button2{
+        left:80px;}
+    }
+</style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="elements">
+            <div class="icon-image"><a href="https://melindamarian.com/" target="_blank">
+                <img alt="Local Hero" src="local hero.jpg"></a> 
+            </div>
+            <h2>This page can be used to report problems in your community.</h2>
+            <p>Select the 'Survey' button to submit a problem or the 'Dashboard' button to see the inputs.</p>
+            <div class="button">
+                <a href="https://arcg.is/0eq4000" target="_blank"><button class="button button1">Survey</button></a>
+                <a href="https://arcg.is/0SrDjy" target="_blank"><button class="button button2">Dashboard</button></a>  
+            </div>
+            <div class="copyright"><h5>&copy; Copyright 2020, <a href="https://www.melindamarian.com/" target="_blank">Melinda Marian</a> </h5></div>
+        </div>
+    </div>
+
+</body>
+</html>
